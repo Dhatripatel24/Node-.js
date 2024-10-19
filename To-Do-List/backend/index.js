@@ -82,9 +82,9 @@ app.post("/addproduct", (req, res) => {
         } else {
             const newdata = JSON.parse(data);
             
-            // Generate a unique ID based on the current length of the array
+          
             const id = newdata.length > 0 ? (Math.max(...newdata.map(product => product.id)) + 1) : 1;
-            newproduct.id = id;  // Set the id to the new product
+            newproduct.id = id;  
 
             newdata.push(newproduct);
 
