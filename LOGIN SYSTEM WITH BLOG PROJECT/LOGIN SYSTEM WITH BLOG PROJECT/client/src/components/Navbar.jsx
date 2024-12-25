@@ -23,15 +23,15 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
       <div className="container">
         <Link to="/" className="navbar-brand font-weight-bold">
-          Home
+          HOME
         </Link>
 
         <Link to="/notes" className="navbar-brand font-weight-bold">
-          Notes
+          NOTES
         </Link>
 
         <Link to="/create-notes" className="navbar-brand font-weight-bold">
-          Create Notes
+         CREATE NOTES
         </Link>
 
         <button
@@ -89,26 +89,26 @@ export default function Navbar() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <button className="dropdown-item">Sign out</button>
+                  <button className="dropdown-item">SIGN OUT</button>
                 </li>
               </ul>
             </li>
 
             <li className="nav-item">
               <Link to="/sign-in" className="btn btn-outline-primary">
-                Sign In
+             SIGN IN
               </Link>
             </li>
 
             {user?.role == "admin" && <li className="nav-item">
               <Link to="/getallnotes" className="btn btn-outline-primary">
-                GetAllNotes
+GETALLNOTES
               </Link>
             </li>}
 
             {user?.role == "admin" && <li className="nav-item">
               <Button className="btn btn-outline-primary bg-white" onClick={handleDelete}>
-                DeleteAllNotes
+               DELETEALLNOTES
               </Button>
             </li>}
           </ul>
